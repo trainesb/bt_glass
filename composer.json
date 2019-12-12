@@ -1,0 +1,8 @@
+{
+  "autoload": {
+    "psr-4": {"BT\\": "lib/BT"}
+  },
+  "require": {
+    "phpunit/phpunit": "6",
+  }
+}

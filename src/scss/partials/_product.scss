@@ -1,0 +1,27 @@
+div.product-display:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.product-col {
+  width: 50%;
+  float: left;
+}
+
+div.product-display > h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div.product-img {
+  width: 16.66%;
+  height: auto;
+  display: inline-block;
+
+  p > img {
+      width: 100%;
+      height: auto;
+  }
+}

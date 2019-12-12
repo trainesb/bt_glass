@@ -1,0 +1,31 @@
+div.top {
+  text-align: center;
+}
+
+div.sub-categories {
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 1.5em;
+
+    div.sub-category {
+      width: 30%;
+      display: inline-block;
+      text-align: center;
+      margin-right: 1.5em;
+      margin-bottom: 1.5em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      h3 {
+        height: 3em;
+      }
+
+      p > img {
+        width: 100%;
+        max-height: auto;
+      }
+    }
+
+    div.sub-category:hover {
+      background: #f1f1f1;
+    }
+}

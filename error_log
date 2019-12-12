@@ -1,0 +1,2 @@
+[29-Jul-2019 18:49:06 America/Detroit] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ReCaptcha has a deprecated constructor in /home/zk59l8uw4xdr/public_html/recaptchalib.php on line 40
+[29-Jul-2019 18:49:06 America/Detroit] PHP Notice:  Undefined index: g-recaptcha-response in /home/zk59l8uw4xdr/public_html/register.php on line 19

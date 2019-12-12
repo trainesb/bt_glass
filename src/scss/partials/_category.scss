@@ -1,0 +1,137 @@
+* {box-sizing: border-box;}
+
+div.sub-category {
+  text-align: center;
+}
+
+div.products {
+  margin: 0 auto;
+  width: 90%;
+
+  div.row {
+    margin: 0 -5px;
+
+    div.product {
+      width: 33%;
+      float: left;
+      padding: 0 10px;
+
+      div.container {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        position: relative;
+
+        p {
+          display: none;
+
+          img.product-img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        p.active {
+          display: block;
+        }
+
+        div.soldout {
+          position: absolute;
+          bottom: 32px;
+          right: 16px;
+          background-color: black;
+          opacity: 0.7;
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      h3 {
+        height: 3em;
+        width: 100%;
+      }
+    }
+
+    div.product:hover {
+      background: #f1f1f1;
+    }
+  }
+
+  div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+div#slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+
+  div.slide.container {
+    position: relative;
+
+    div.slide-frame {
+      background-color: lightgray;
+      border: thin solid #000;
+
+      img.product-img {
+        width: 100%;
+        max-height: auto;
+      }
+    }
+
+    a.prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    a.next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    a.prev:hover, a.next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    div.thumbnail {
+      background-color: lightgray;
+      border: thin solid #000;
+
+      div.slide-img {
+        cursor: pointer;
+        float: left;
+        opacity: 0.6;
+      }
+
+      div.slide-img:hover {
+        opacity: 1;
+      }
+    }
+
+    div.thumbnail:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
